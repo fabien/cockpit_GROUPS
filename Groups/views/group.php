@@ -110,7 +110,7 @@ use Cockpit\Controller\Groups;
                         </a>
                         <div class="uk-margin-small-top" ref="info-table">
                             <table class="uk-table">
-                                <tr><th>Key</th><th>Recommended val</th><th>Info</th></tr>                                
+                                <tr><th>Key</th><th>Recommended val</th><th>Info</th></tr>
                                 @foreach(Groups::getGroupVars() as $var_key => $var_val)
                                     <tr><td>{{$var_key}}</td><td>{{$var_val}}</td><td>{{Groups::getGroupVarInfo($var_key) ?? '-'}}</td></tr>
                                 @endforeach
@@ -158,6 +158,9 @@ use Cockpit\Controller\Groups;
             </div>
             <div class="uk-margin-small-top">
                 <field-boolean bind="group.cockpit.info" label="@lang('SysInfo')"></field-boolean>
+            </div>
+            <div class="uk-margin-small-top">
+                <field-boolean bind="group.cockpit.unlockresources" label="@lang('Unlock')"></field-boolean>
             </div>
         </div>
         <div class="uk-form-row">
