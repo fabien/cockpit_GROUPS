@@ -162,6 +162,9 @@ use Cockpit\Controller\Groups;
             <div class="uk-margin-small-top">
                 <field-boolean bind="group.cockpit.unlockresources" label="@lang('Unlock')"></field-boolean>
             </div>
+            <div class="uk-margin-small-top">
+                <field-boolean bind="group.cockpit.detektivo" label="@lang('Detektivo')"></field-boolean>
+            </div>
         </div>
         <div class="uk-form-row">
             <strong class="uk-text-uppercase">collections <small>(global)</small></strong>
