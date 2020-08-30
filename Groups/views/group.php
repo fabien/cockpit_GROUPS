@@ -148,6 +148,9 @@ use Cockpit\Controller\Groups;
                 <field-boolean bind="group.cockpit.finder" label="@lang('Finder')"></field-boolean>
             </div>
             <div class="uk-margin-small-top">
+                <field-boolean bind="group.cockpit.assets" label="@lang('Assets')"></field-boolean>
+            </div>
+            <div class="uk-margin-small-top">
                 <field-boolean bind="group.cockpit.settings" label="@lang('Settings')"></field-boolean>
             </div>
             <div class="uk-margin-small-top">
